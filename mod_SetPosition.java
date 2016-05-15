@@ -38,8 +38,8 @@ public class mod_SetPosition extends BaseMod
 		if ((keybinding == this.key) && (mc.currentScreen == null))
 		{
 			EntityPlayer player = mc.thePlayer;
-		Minecraft minecraft=ModLoader.getMinecraftInstance();
-		minecraft.ingameGUI.addChatMessage("set position!");
+		    Minecraft minecraft=ModLoader.getMinecraftInstance();
+		    minecraft.ingameGUI.addChatMessage("set position!");
 			X=player.posX;
 			Y=player.posY;
 			Z=player.posZ;
@@ -48,7 +48,7 @@ public class mod_SetPosition extends BaseMod
 			HYaw=player.rotationYawHead;
 			World world=player.worldObj;
 			minecraft.ingameGUI.addChatMessage(""+world.getWorldTime());
-Time=world.getWorldTime();
+            Time=world.getWorldTime();
 		}
 		if((keybinding==this.keytwo)&&(mc.currentScreen==null)){
 		    EntityPlayer player=mc.thePlayer;
